@@ -8,22 +8,35 @@
     font-family: Arial;
     box-sizing: border-box;
     background-color: #eee;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #bbb;
+    cursor: pointer;
+} button:hover {
+    background-color: #ccc;
+} button:focus {
+    outline: none;
+} .clicked {
+    background-color: #ccc;
 }
 
 h1 {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .topControls {
     width: var(--sketchPad-size);
-    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin: 2.5rem auto 1.5rem auto;
-} #renderButton {
-
 }
 
 .sketchPad {
@@ -48,8 +61,64 @@ h1 {
     width: 100%;
     border-color: #ddd;
     border-width: 1px;
-} .selected {
-    background-color: black;
+}
+
+.bottomControls {
+    width: var(--sketchPad-size);
+    margin: 1rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sliderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} .slider {
+    width: 100%;
+} #clearButton {
+    heigth: 50px;
+    margin-right: 20px;
+} .sliderValue {
+    margin-left: 20px;
+} #submitButton {
+    margin: 15px auto 0 auto;
+}
+
+.submitModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);  /* fallback color */
+    background-color: rgb(0,0,0,.4);  /* black w/ opacity */
+
+}
+
+.modalContent {
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 20rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} .modalContent > p {
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+} .modalContent > button {
+    margin-bottom: 80px;
 }
 
 footer {
@@ -58,9 +127,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-
     padding: 20px;
-
     background-color: #ddd;
     border-top-style: solid;
     border-color: #bbb;

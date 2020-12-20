@@ -8,11 +8,28 @@
   <title>Odin Etch-a-Sketch</title>
 </head>
 <body>
-  <h1>MothaFucken Etch-a-Sketch Bitch</h1>
+  <h1>Etch-a-Sketch</h1>
   <div class='topControls'>
-    <button id='renderButton'>render</button>
+    <button id='black' class='colorButton'>black</button>
+    <button id='rainbow' class='colorButton'>rainbow</button>
+    <button id='grayscale' class='colorButton'>grayscale</button>
+    <button id='eraser' class='colorButton'>eraser</button>
   </div>
   <div class='sketchPad'></div>
+  <div class='bottomControls'>
+    <div class='sliderContainer'>
+      <button id='clearButton'>clear</button>
+      <input type='range' min='1' max='100' value='16' class='slider'>
+      <p class='sliderValue'></p>
+    </div>
+    <button id='submitButton'>submit drawing</button>
+  </div>
+  <div class='submitModal'>
+    <div class='modalContent'>
+      <p>sorry, you can only submit drawings that are good</p>
+      <button id='exitModalButton'>delete your shitty drawing</button>
+    </div>
+  </div>
   <footer>This project is part of
       <a href='https://www.theodinproject.com/courses/foundations/lessons/etch-a-sketch-project'>
         The Odin Project
