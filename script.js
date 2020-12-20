@@ -95,7 +95,7 @@ function colorPixel(e) {
     // e.target.classList.add('selected');
     const pixelStyle = e.target.style;
     if (pixelColor=='black') pixelStyle.backgroundColor='black';
-    else if (pixelColor=='eraser') pixelStyle.backgroundColor='#eee';
+    else if (pixelColor=='eraser') pixelStyle.backgroundColor='white';
     else if (pixelColor=='rainbow') pixelStyle.backgroundColor=getRandomColor();
     else if (pixelColor=='grayscale') pixelStyle.backgroundColor=getGrayScaleColor(e.target);
 }
