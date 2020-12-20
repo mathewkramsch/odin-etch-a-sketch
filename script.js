@@ -43,6 +43,7 @@ exitModalButton.onclick = ()=>{
 // DRAWING SKETCH PAD:
 updateTextAndRenderPad();  // default render sketch pad
 clearButton.addEventListener('click', ()=>renderSketchPad(slider.value));
+slider.addEventListener('change',updateTextAndRenderPad);
 slider.addEventListener('mousedown',()=>slider.addEventListener('mousemove',moved));
 
 // if button is still clicked down, update sketch pad, else remove mousemove eventlistener
