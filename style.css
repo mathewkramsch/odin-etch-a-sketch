@@ -1,0 +1,68 @@
+/* style.css */
+
+:root {
+    --sketchPad-size: 700px;
+}
+
+ body {
+    font-family: Arial;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.topControls {
+    width: var(--sketchPad-size);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2.5rem auto 1.5rem auto;
+} #renderButton {
+
+}
+
+.sketchPad {
+    border-style: solid;
+    width: var(--sketchPad-size);
+    height: var(--sketchPad-size);
+    margin: 0 auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.pixel {
+    border-style: solid;
+    width: 100%;
+    border-color: #ddd;
+    border-width: 1px;
+} .selected {
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 20px;
+
+    background-color: #ddd;
+    border-top-style: solid;
+    border-color: #bbb;
+    border-width: 1px;
+}
